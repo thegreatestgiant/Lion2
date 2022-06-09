@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <title>Lion</title>
+  <head>
+    <style>
+      body {
+        background-color:black;
+        color:red;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+      input {
+        margin-bottom: 10px;
+        color:red;
+      }
+      form {
+        color:red;
+      }
+      form input {
+    background: none;
+    font-family: inherit;
+    padding: 0px 17px;
+    height: 48px;
+    border: 1px solid rgb(255, 255, 255, .2);
+    color: var(--text-color);
+    border-radius: 3px;
+    outline: none;
+    width: 350px;
+    margin-top: 5px;
+    border-radius: 50px;
+    color: #FFF;
+}
+form input:focus {
+    border: 1px solid rgba(253, 253, 253, 0.514);
+    border-radius: 6px;
+    animation: fadeInAnimation ease-in-out 0.3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+      center {
+        color:red;
+      }
+      .logo-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10%;
+}
+.logo {
+    width: 150px;
+}
+.logo-wrapper .text {
+    font-size: 75px;
+    font-family: "Roboto";
+    color: #FFF;
+}
+.logo-wrapper h1 {
+    color: white;
+}
+    </style>
+  </head>
+  <body style="color:red;">
+    <center>
+<div class="logo-wrapper">
+  <img class="logo" src="https://lion.shlomoalter1.repl.co/uv.jpg"
+            alt="" />
+        <h1>Lion</h1>
+  </div>
+      <form method=POST action=/service/gateway>
+        <input placeholder="Search the web freely" name=url>
+      </form>
+  </body>
+<p credit to ludicrous for this because it doth be rhodium>
+</html>
